@@ -1,0 +1,54 @@
+$colors: (
+    white: #fff,
+    gray-100: #f8f9fa,
+    gray-200: #e9ecef,
+    gray-300: #dee2e6,
+    gray-400: #ced4da,
+    gray-500: #adb5bd,
+    gray-600: #6c757d,
+    gray-700: #495057,
+    gray-800: #343a40,
+    gray-900: #212529,
+    black: #000,
+
+    blue: #3459e6,
+    indigo: #6610f2,
+    purple: #6f42c1,
+    pink: #d63384,
+    red: #da292e,
+    orange: #f8765f,
+    yellow: #f4bd61,
+    green: #2fb380,
+    teal: #20c997,
+    cyan: #287bb5,
+
+    primary: #004AAD,
+    secondary: #F9B833,
+    success: #2CB859,
+    info: #F2CA3B,
+    warning: purple,
+    light: gray-100,
+    dark: #262626,
+
+    danger: #E24141,
+    danger-light: #FCECEC,
+
+    primary-light: #E6EDF7,
+    primary-active: #B0C7E6,
+    primary-dark:#001A3D,
+);
+
+@each $color,
+$value in $colors {
+    .text-#{$color} {
+        color: $value !important; // Define a cor do texto
+    }
+
+    .bg-#{$color} {
+        background-color: $value !important; // Define a cor de fundo
+    }
+
+    .border-#{$color} {
+        border-color: $value !important; // Define a cor de fundo
+    }
+}
